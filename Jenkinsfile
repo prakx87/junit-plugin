@@ -18,7 +18,7 @@ pipeline {
         }
         stage('Build') {
             steps {
-                sh 'export JAVA_HOME=/var/jenkins_home/tools/hudson.model.JDK/jdk8/java-se-8u41-ri/bin/java && mvn -Dmaven.test.failure.ignore=true install'
+                sh 'export JAVA_HOME=/var/jenkins_home/tools/hudson.model.JDK/jdk8/java-se-8u41-ri && mvn -Dmaven.test.failure.ignore=true install'
             }
             post {
                 success {
