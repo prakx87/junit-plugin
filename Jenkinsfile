@@ -8,7 +8,7 @@ pipeline {
 	    stage('Initialize') {
             steps {
                 sh '''
-		    export JAVA_HOME=/var/jenkins_home/tools/hudson.model.JDK/jdk8
+		    export JAVA_HOME=/var/jenkins_home/tools/hudson.model.JDK/jdk8/jre
                     echo "PATH = ${PATH}"
                     echo "M2_HOME = ${M2_HOME}"
 		    echo "JAVA_HOME = ${JAVA_HOME}"
