@@ -17,7 +17,7 @@ pipeline {
         }
         stage('Build') {
             steps {
-                sh 'mvn -Dmaven.test.failure.ignore=true install'
+                sh 'export JAVA_HOME=/var/jenkins_home/tools/hudson.model.JDK/jdk8/jre/bin/java && mvn -Dmaven.test.failure.ignore=true install'
             }
             post {
                 success {
