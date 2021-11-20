@@ -12,6 +12,7 @@ pipeline {
                     echo "PATH = ${PATH}"
                     echo "M2_HOME = ${M2_HOME}"
 		    echo "JAVA_HOME = ${JAVA_HOME}"
+		    ls -lah /var/jenkins_home/tools/hudson.model.JDK/jdk8
                 '''
             }
         }
